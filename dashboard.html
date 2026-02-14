@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Energy Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .title {
+            font-size: 20px;
+            color: #555;
+        }
+        .value {
+            font-size: 35px;
+            font-weight: bold;
+            color: #1e90ff;
+            margin-top: 10px;
+        }
+        .status {
+            grid-column: span 2;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Smart Renewable Energy Monitor
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="title">Total Production</div>
+        <div class="value" id="production">{{ production }}</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Consumption</div>
+        <div class="value" id="consumption">{{ consumption }}</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Carbon Saved (kg)</div>
+        <div class="value" id="carbon">{{ carbon }}</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Future Prediction</div>
+        <div class="value" id="prediction">{{ prediction }}</div>
+    </div>
+
+    <div class="card status">
+        <div class="title">System Suggestion</div>
+        <div class="value" id="suggestion">{{ suggestion }}</div>
+    </div>
+
+</div>
+
+</body>
+</html>
