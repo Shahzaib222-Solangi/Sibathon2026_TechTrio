@@ -1,0 +1,4 @@
+This is a Smart Energy Simulator Project this will simulates the calculation of how much energy is produced from renewable sources (Water, Wind Turbines and Solar Energy)
+and how much energy is consumed. This project also gives suggestions like Energy Shortage or Energy should be store in battery or Energy balanced based on difference between energy production and energy consumption. This project also shows how much Corbon Dioxide (C02) is prevent from getting energy from renewable sources rather than fossil fuels which gives energy but also emitts co2 which pollute our environment.
+This project also shows how much corbon dioxide gas is prevent from getting energy from renewable sources rather than fossil fuels which gives energy but also pollute our environment with corbon dioxide.
+In this project I used HTML and Python.
